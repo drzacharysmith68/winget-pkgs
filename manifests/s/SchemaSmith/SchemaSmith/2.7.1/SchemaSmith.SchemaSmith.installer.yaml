@@ -1,0 +1,25 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: SchemaSmith.SchemaSmith
+PackageVersion: 2.7.1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: SchemaQuench.exe
+  PortableCommandAlias: SchemaQuench
+- RelativeFilePath: SchemaTongs.exe
+  PortableCommandAlias: SchemaTongs
+- RelativeFilePath: DataTongs.exe
+  PortableCommandAlias: DataTongs
+- RelativeFilePath: SchemaShears.exe
+  PortableCommandAlias: SchemaShears
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Schema-Smith/SchemaSmith/releases/download/v2.7.1/SchemaSmith-2.7.1-win-x64.zip
+  InstallerSha256: B843C88F62980618C57C7F36829630A98336B5FD4302D8E6B500D13188D1F9D2
+- Architecture: arm64
+  InstallerUrl: https://github.com/Schema-Smith/SchemaSmith/releases/download/v2.7.1/SchemaSmith-2.7.1-win-arm64.zip
+  InstallerSha256: 68CE180E42BA218F1F76938D76657DB78751DB1A8CFF30C98BFCB3B879FED1F7
+ManifestType: installer
+ManifestVersion: 1.6.0
